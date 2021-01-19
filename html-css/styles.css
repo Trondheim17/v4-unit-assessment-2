@@ -12,3 +12,163 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: rgb(37, 37, 37);
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(42, 171, 226);
+    font-size: 28px;
+    display: block;
+    margin: 30px;
+    font-weight: 600;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 40px;
+}
+
+main {
+    height: 90%;
+    width: 75%;
+    margin-top: 10vh;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.articles-list {
+    width: 200px;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 0 0 30px rgba(102, 75, 75, .3);
+}
+
+footer {
+    background-color: rgb(42, 171, 226);
+    width: 100vw;
+    height: 6vh;
+    font-size: 18px;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+}
+
+aside {
+    display: inline-block;
+}
+
+.questionmark {
+    border-radius: 50%;
+    border-color: black;
+    border: solid;
+    border-width: 4px;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(42, 171, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARIAAAC4CAMAAAAYGZMtAAAAOVBMVEXz8/PS1NP////29vb8/Pz08vPV19bn5+fw8PDj5OPX2tnr6uvP1NLP09PT09Pz9fTe3t7n6uji4eLV9fj5AAAE/klEQVR4nO2dYZtjMBSFWVNEpxL9/z92pSkiJ1qdwe6V835cRtv3OTeXxJL9IQHZv/4C/x+9ki8y4ZQUGRmhEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEmAnJYXWxQHoBxt/932U1Oo4aiFK2vwobt3WX34nJY8vuzsPJ52clJRHIEpJuXmgYzRSlFxs4Vy3PWaUurnl1dYHpRJAupJvKpnDlABMCUAlAAsHYEoApgRINyU6W5gWSTUl9VUZY1RXRzall5I+HrVqnpMvjcrCrCSoJNNd6U0XNR0oSa5wtJpPoZVd8ikJjFgns+3ppeRahkryZjbIppcSE5l+Vv4OySm5tpGJ/llMkiscGElgRj65lDRRJWamJK2U1Di4opK0UrKoZHJCJRElaRVOxsIJ0bHTkrz1FaSWkvACx1H6x00uJdHBxPi7pKYkGpNyZiC1wsm0xpO12SVOginRdejEcArJd9K2rQnmX5NLic2JNuMY25Yq3J6gkl5KUd+bvCzbslE1fM0EC+dJXV+vkSWLRFPymnRTsghTAjAlAFMCUAnAwgGYEoApAZgSgEoAFg7AlABMCXDGlPzyg8+lRNfKlI2xe10uP/2gcxVO5SYQ7eThopK3X+tMKSmq8QYjmFB11MaYt7/2TCmpvFuuok7sDm1+f/NB50lJn5H2lZNLVsWWO5HTKNGVTYC3QANhUOPmcOVmzlkKR1ew/K3sIt44yBb+WrCpXzx64iQpKapQyLN2BiXFfHW8efHoiXOkJGqkdzIVSLhDs1w750hJFbu/d6gdt0O4adnJGZQUcSO3b8+JWe/kBIUTdN9JiX0WydBwa7hHrV1yIj8l8bvPRmwvfpzcGxDXxPuO+JQsjKxTGEzfdZ5OsHbiSmSn5J0Rm5OhQPD+zmjtSE8JthJkPIE3ebh3zInslCz0GsjJc/fIfcCRc3vRSpZ6jc/ttZNI35FcOP2V3tpHrX3SdwSnZMXIOoXhMc/2dBJsC/uO3JR8YiT35k/enseKTUmxptf4PMeT4m0vFqtkXa+J5STSdxr/Vk+hhXOpyo+VTH0HLgFmfUdmSnSXr242QU76MVbb8WT2560/xopMyYcj6/TL78P6zv1F3xGZEpxnXYsaph7vsGl0IlHJp70mcOJY7jvyCmfldc0S41oGTrOUzonAlOA4sJpb/rLvOCfyUrLwIIX1DH1Hq7DvuF4sLyVvJhZXcB+udxTkzeqSp+TXKZn6TqFCJVaFvML5fUq8vhMeyymRlpJiAyWLTuyDolJMyc1zEhzNKZGWkm2UDD9azw8nc3jdYizJn/+p/nLR/UW113eckvQKZ3LirgG9CwSZw2v8CSQ/dOKYLqyFpmQrJZOTohv+Ke2U3DwnenAi9FQNlzF/qmR0onVXtpMSaSkpcCXm50y1YxcO21amksji1HZOZBZOVt3f8cFLte7jrRbZtf9Le3yBKdkbgSnZG6YEkJOSxxvZVNd11c6oUsq7ttxL6g6CSsQqOeSlfQ4hSux59+aHPIqdlGz//tbj4PuEASoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKACoBqASgEoBKAKfkqyAjTgmZQyXAX7B/b3SjnfiiAAAAAElFTkSuQmCC);
+    display: inline-block;
+    height: 125px;
+    width: 250px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.circle2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+aside {
+    float: right;
+    margin-top: 10vh;
+}
+
+.circle1 {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: solid 5px black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 30px rgba(102, 75, 75, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    margin-bottom: 50px;
+    margin-right: 75px;
+    margin-top: 50px;
+}
+ .list {
+    margin-top: 10px;
+ }
+
+ .item {
+     margin: 5px;
+     margin-left: 20px;
+ }
+
